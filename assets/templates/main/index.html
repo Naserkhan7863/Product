@@ -1,0 +1,902 @@
+{% load static %}
+	<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- META DATA -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		
+		   
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+		   
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+		
+        <!-- TITLE OF SITE -->
+        <title>PriceDekho</title>
+
+        <!-- for title img -->
+		<link rel="shortcut icon" type="image/icon" href="{% static 'main/images/logo/favicon.png' %}">
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="{% static 'main/css/font-awesome.min.css' %}">
+		
+		<!--linear icon css-->
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+		
+		<!--animate.css-->
+        <link rel="stylesheet" href="{% static 'main/css/animate.css' %}">
+		
+		<!--hover.css-->
+        <link rel="stylesheet" href="{% static 'main/css/hover-min.css' %}">
+		
+		<!--vedio player css-->
+        <link rel="stylesheet" href="{% static 'main/css/magnific-popup.css' %}">
+
+		<!--owl.carousel.css-->
+        <link rel="stylesheet" href="{% static 'main/css/owl.carousel.min.css'  %}">
+		<link href="{% static 'main/css/owl.theme.default.min.css' %}" rel="stylesheet"/>
+
+
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
+		
+		<!-- bootsnav -->
+		<link href="{% static 'main/css/bootsnav.css' %}" rel="stylesheet"/>	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="{% static 'main/css/responsive.css'%}">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+		
+		
+		
+		<!--header start-->
+		<section class="header">
+			<div class="container">	
+				<div class="header-left">
+					<ul class="pull-left">
+						<li>
+							<a href="{% url 'home7'%}">
+								<i class="fa fa-phon" aria-hidden="true"></i>Register
+							</a>
+							&nbsp;&nbsp;	/
+							<a href="{% url 'home8'%}">
+								<i class="fa fa-phon" aria-hidden="true"></i>Login
+							</a>
+							&nbsp;&nbsp;
+							<a href="{% url 'admin-login'%}">
+								<i class="fa fa-phon" aria-hidden="true"></i>Admin
+							</a>	
+						</li><!--/li-->
+						
+						<li>
+							<a href="#">
+								<i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com
+							</a>
+						</li><!--/li-->
+					</ul><!--/ul-->
+				</div><!--/.header-left -->
+				<div class="header-right pull-right">
+					<ul>
+						<li class="reg">
+							<a href="user-login.html" data-toggle="modal" data-target="">
+								
+							</a>
+								
+							<a href="#" data-toggle="modal" data-target="">
+								
+							</a>
+							<a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+								
+							</a>
+							
+							
+							<!-- small modal -->
+							<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+								<div class="modal-dialog modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											 	<span aria-hidden="true">
+											 		<i class="fa fa-close"></i>
+											 	</span>
+											 </button> 
+											<h4 class="modal-title" id="mySmallModalLabel">
+												Sign In
+											</h4> 
+											<form class="sm-frm" style="padding:25px">
+												<label>Name :</label>
+												<input type="text" class="form-control" placeholder="Enter Email">
+												<label>Passoward :</label>
+												<input type="text" class="form-control" placeholder="Enter Passoward">
+												<label><input type="checkbox" name="personality"> Remember Me</label>
+												<button type="button" class="btn btn-default pull-right">Submit</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- large modal -->
+							<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											 	<span aria-hidden="true">
+											 		<i class="fa fa-close"></i>
+											 	</span>
+											</button>  
+											<h4 class="modal-title" id="myLargeModalLabel">Register</h4> 
+											<form class="lg-frm" style="padding:25px">
+												<label>Name :</label>
+												<input type="text" class="form-control" placeholder="Enter Name">
+												<label>Email :</label>
+												<input type="text" class="form-control" placeholder="Enter Email">
+												<label>Passoward :</label>
+												<input type="text" class="form-control" placeholder="Enter Passoward">
+												<button type="button" class="btn btn-default pull-right">Submit</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li><!--/li -->
+						<li>
+							<div class="social-icon">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								</ul><!--/.ul -->
+							</div><!--/.social-icon -->
+						</li><!--/li -->
+					</ul><!--/ul -->
+				</div><!--/.header-right -->
+			</div><!--/.container -->	
+
+		</section><!--/.header-->	
+		<!--header end-->
+		
+		<!--menu start-->
+		<section id="menu">
+			<div class="container">
+				<div class="menubar">
+					<nav class="navbar navbar-default">
+					
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="index.html">
+								<img src="{% static 'main/images/download (2).png'%}" alt="logo" height="">
+							</a>
+						</div><!--/.navbar-header -->
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="active"><a href="{% url 'home' %}">Home</a></li>
+								<li><a href="{% url 'home1'%}">Mobiles</a></li>
+								<li><a href="{% url 'home3'%}">Smart TV's</a></li>
+								<li><a href="{% url 'home2'%}">Laptops</a></li>
+								<li><a href="{% url 'home4'%}">Smart Watches</a></li>
+								<li><a href="{% url 'home5'%}">Contact</a></li>
+								
+								<li>
+									<a href="{% url 'home6'%}">
+										<span class="lnr lnr-cart"></span>
+									</a>
+								</li>
+								<li class="search">
+									<form action="">
+										<input type="text" name="search" placeholder="Search....">
+										<a href="#">
+											<span class="lnr lnr-magnifier"></span>
+										</a>
+									</form>
+								</li>
+							</ul><!-- / ul -->
+						</div><!-- /.navbar-collapse -->
+					</nav><!--/nav -->
+				</div><!--/.menubar -->
+			</div><!-- /.container -->
+
+		</section><!--/#menu-->
+		<!--menu end-->
+		
+		<!-- header-slider-area start -->
+		<section class="header-slider-area">
+			<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+			
+			  <!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="single-slide-item slide-1">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="single-slide-item-content">
+											<h2>"Ultimate Shopping Experience"</h2>
+											<p>
+												You could be shopping for mobile phones, laptops, television.
+												 we always have them listed with us. Perhaps the most user-friendly search engine.
+											</p>
+											<button type="button" class="slide-btn">
+											get started
+											</button>
+											<button type="button"  class="slide-btn">
+												explore more
+											</button>
+											
+										</div><!-- /.single-slide-item-content-->
+									</div><!-- /.col-->
+								</div><!-- /.row-->
+							</div><!-- /.container-->
+						</div><!-- /.single-slide-item-->
+					</div><!-- /.item .active-->
+					<div class="item">
+						<div class="single-slide-item slide-2">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="single-slide-item-content">
+											<h2>
+												If you expect to get the best price without PriceDekho !!  <br>YOU ARE MISTAKEN
+											</h2>
+											<p>
+												It’s simple! Simply visit www.pricee.com and search for the product you are looking for.
+												 The website will throw a pool of results for your search.
+											</p>
+											<button type="button"  class="slide-btn">
+												get started
+											</button>
+											<button type="button"  class="slide-btn
+											">
+												explore more
+											</button>
+										</div><!-- /.single-slide-item-content-->
+									
+									</div><!-- /.col-->
+								</div><!-- /.row-->
+							</div><!-- /.container-->
+						</div><!-- /.single-slide-item-->
+					</div><!-- /.item .active-->
+				</div><!-- /.carousel-inner-->
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="lnr lnr-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="lnr lnr-chevron-right"></span>
+				</a>
+			</div><!-- /.carousel-->
+
+		</section><!-- /.header-slider-area-->
+		<!-- header-slider-area end -->
+		
+		<!--we-do start -->
+		<section  class="we-do">
+			<div class="container">
+				<div class="we-do-details">	
+					<div class="section-header text-center">
+						<h2>what we do</h2>
+						<p>
+							Searching for your favourite products at the best possible prices?
+							 At PriceDekho we give you easy access to the best deals that can help you save more money while shopping.
+						</p>
+					</div><!--/.section-header-->
+					<div class="we-do-carousel">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<div class="single-we-do-box text-center">
+									<div class="we-do-description">
+										<div class="we-do-info">
+											<div class="we-do-img">
+												<img src="{% static 'main/images/home/consultency.png'%}" alt="image of consultency" />
+											</div><!--/.we-do-img-->
+											<div class="we-do-topics">
+												<h2>
+													<a href="#">
+														Targeting Budget-Conscious Customers
+													</a>
+												</h2>
+											</div><!--/.we-do-topics-->
+										</div><!--/.we-do-info-->
+										<div class="we-do-comment">
+											<p>
+												Targeting Budget-Conscious Customers
+											</p>
+										</div><!--/.we-do-comment-->
+									</div><!--/.we-do-description-->
+								</div><!--/.single-we-do-box-->
+							</div><!--/.col-->
+							<div class="col-sm-4 col-xs-12">
+								<div class="single-we-do-box text-center">
+									<div class="we-do-description">
+										<div class="we-do-info">
+											<div class="we-do-img">
+												<img src="{% static 'main/images/home/busisness_grow.png' %}" alt="image of business" />
+											</div><!--/.we-do-img-->
+											<div class="we-do-topics">
+												<h2>
+													<a href="#">
+														Close to Competition
+														</a>
+												</h2>
+											</div><!--/.we-do-topics-->
+										</div><!--/.we-do-info-->
+										<div class="we-do-comment">
+											<p>
+												With so many new brands popping up each day, it is hard to keep track of who’s
+												 rapidly climbing the ranks within the industry.
+											</p>
+										</div><!--/.we-do-comment-->
+									</div><!--/.we-do-description-->
+								</div><!--/.single-we-do-box-->
+							</div><!--/.col-->
+							<div class="col-sm-4 col-xs-12">
+								<div class="single-we-do-box text-center">
+									<div class="we-do-description">
+										<div class="we-do-info">
+											<div class="we-do-img">
+												<img src="{% static 'main/images/home/support-logo.png'%}" alt="image of support" />
+											</div><!--/.we-do-img-->
+											<div class="we-do-topics">
+												<h2>
+													<a href="#">
+														great support
+													</a>
+
+												</h2>
+											</div><!--/.we-do-topics-->
+										</div><!--/.we-do-info-->
+										<div class="we-do-comment">
+											<p>
+												With the help of price comparison 
+												websites, you can discover new competitors with ease.						
+																</p>
+										</div><!--/.we-do-comment-->
+									</div><!--/.we-do-description-->
+								</div><!--/.single-we-do-box-->
+							</div><!--/.col-->
+						</div><!--/.row-->
+					</div><!--/.we-do-carousel-->
+				</div><!--/.we-do-details-->
+			</div><!--/.container-->
+
+		</section><!--/.we-do-->
+		<!--we-do end-->
+
+		<!--about-us start -->
+		<section class="about-us">
+			<div class="container">
+				<div class="about-us-content">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="single-about-us">
+								<div class="about-us-txt">
+									<h2>about us</h2>
+									<p>
+										PriceDekho Shopping is one of the largest price comparison shopping engines available to online shoppers. 
+										Products available on PriceDekho Shopping are also visible on standard Google search results.
+										 PriceDekho Shopping is also integrated with Google Ads – one of the best pay-per-click platforms.									</p>
+									<div class="project-btn">
+										<a href="#"  class="project-view">learn more
+										</a>
+									</div><!--/.project-btn-->
+								</div><!--/.about-us-txt-->
+							</div><!--/.single-about-us-->
+						</div><!--/.col-->
+						<div class="col-sm-6">
+							<div class="single-about-us">
+								<div class="about-us-img">
+									<img src="{% static 'main/images/about/about-part.jpg'%}" alt="about images">
+								</div><!--/.about-us-img-->
+							</div><!--/.single-about-us-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.about-us-content-->
+			</div><!--/.container-->
+
+		</section><!--/.about-us-->
+		<!--about-us end -->
+
+
+
+
+	
+		<!--pricing start -->
+		<section id="pricing" class="pricing">
+			<div class="container">
+				<div class="pricing-details">
+					<div class="section-header text-center">
+						<h2 class="price-head">Popular Products</h2>
+						<p>
+							We are not only limited to price comparison. We have some exciting new products that you would love:						</p>
+					</div><!--/.section-header-->
+					<div class="pricing-content">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="pricing-box">
+									<div class="pricing-header">
+										<h2>Popular </h2>
+										<h2 class="packeg_p">Mobiles</h2>
+										<p>By Budget</p>
+									</div><!--/.pricing-header-->
+									<ul class="plan-lists">
+										<li>Rs.7000 - Rs.10000<a href="	  https://www.amazon.in/s?k=samsung+mobile+under+7k&rh=p_36%3A700000-1000000&adgrpid=65445263707&ext_vrnc=hi&gclid=Cj0KCQiAip-PBhDVARIsAPP2xc0Bcy-XuB1VzrotA3rM024zxTj0uTM7OqB4QBIHUuiNcnnO06iq5roaAosjEALw_wcB&hvadid=382187734073&hvdev=c&hvlocphy=9062165&hvnetw=g&hvqmt=b&hvrand=8887431762278238914&hvtargid=kwd-445829280460&hydadcr=24539_1955326&qid=1642656665&rnid=1318502031&tag=googinhydr1-21&ref=sr_nr_p_36_2
+											"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/></a><a href="https://www.flipkart.com/mobiles/~3-gb-ram-mobiles/pr?sid=tyy%2C4io&p%5B%5D=facets.price_range.from%3D2000&p%5B%5D=facets.price_range.to%3D7000"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a><A href="https://www.reliancedigital.in/smart-phones/c/S101711?searchQuery=:relevance:price:[3799%20TO%207000]&page=0"><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/></</li> 
+									
+									
+												<li> Rs.12000 - Rs.15000 <a href="https://www.amazon.in/s?k=samsung+mobile+under+7k&rh=p_36%3A1200000-1500000&adgrpid=65445263707&ext_vrnc=hi&gclid=Cj0KCQiAip-PBhDVARIsAPP2xc0Bcy-XuB1VzrotA3rM024zxTj0uTM7OqB4QBIHUuiNcnnO06iq5roaAosjEALw_wcB&hvadid=382187734073&hvdev=c&hvlocphy=9062165&hvnetw=g&hvqmt=b&hvrand=8887431762278238914&hvtargid=kwd-445829280460&hydadcr=24539_1955326&qid=1642656866&rnid=1318502031&tag=googinhydr1-21&ref=sr_nr_p_36_2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/></a><a href="https://www.flipkart.com/mobiles/~3-gb-ram-mobiles/pr?sid=tyy%2C4io&p%5B%5D=facets.price_range.from%3D13000&p%5B%5D=facets.price_range.to%3D16000"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a><a href="https://www.reliancedigital.in/smart-phones/c/S101711?searchQuery=:relevance:price:[12000%20TO%2015000]&page=0"><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/></a></li>
+										
+										
+												<li>Rs.18000 - Rs.25000<a href="https://www.amazon.in/s?k=samsung+mobile+under+7k&rh=p_36%3A1800000-2500000&adgrpid=65445263707&ext_vrnc=hi&gclid=Cj0KCQiAip-PBhDVARIsAPP2xc0Bcy-XuB1VzrotA3rM024zxTj0uTM7OqB4QBIHUuiNcnnO06iq5roaAosjEALw_wcB&hvadid=382187734073&hvdev=c&hvlocphy=9062165&hvnetw=g&hvqmt=b&hvrand=8887431762278238914&hvtargid=kwd-445829280460&hydadcr=24539_1955326&qid=1642656866&rnid=1318502031&tag=googinhydr1-21&ref=sr_nr_p_36_2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/></a><a href="https://www.flipkart.com/mobiles/~3-gb-ram-mobiles/pr?sid=tyy%2C4io&p%5B%5D=facets.price_range.from%3D20000&p%5B%5D=facets.price_range.to%3D25000"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a><a href="https://www.reliancedigital.in/smart-phones/c/S101711?searchQuery=:relevance:price:[18000%20TO%2025000]&page=0"><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/></a></li>
+										
+										
+												<li>Rs.30000 & Above <a href="https://www.amazon.in/s?k=samsung+mobile+under+7k&rh=p_36%3A3000000-50500000&adgrpid=65445263707&ext_vrnc=hi&gclid=Cj0KCQiAip-PBhDVARIsAPP2xc0Bcy-XuB1VzrotA3rM024zxTj0uTM7OqB4QBIHUuiNcnnO06iq5roaAosjEALw_wcB&hvadid=382187734073&hvdev=c&hvlocphy=9062165&hvnetw=g&hvqmt=b&hvrand=8887431762278238914&hvtargid=kwd-445829280460&hydadcr=24539_1955326&qid=1642656866&rnid=1318502031&tag=googinhydr1-21&ref=sr_nr_p_36_2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/></a>  <a href="https://www.flipkart.com/mobiles/~3-gb-ram-mobiles/pr?sid=tyy%2C4io&p%5B%5D=facets.price_range.from%3D25000&p%5B%5D=facets.price_range.to%3DMax"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a>  <a href="https://www.reliancedigital.in/smart-phones/c/S101711?searchQuery=:relevance:price:[18000%20TO%2025000]&page=0"><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/</a></li>
+									</ul><!--/ul-->
+									
+									<div class="project-btn pricing-btn text-center">
+										<a href="project.html"  class="project-view">
+											Browse Now
+										</a>
+									</div><!--/.project-btn-->
+								</div><!--/.pricing-box-->
+							</div><!--/.col-->
+
+							<div class="col-md-3 col-sm-6">
+								<div class="pricing-box">
+									<div class="pricing-header">
+										<h2>Popular</h2>
+										<h3 class="packeg_p">Laptops</h3>
+										<p>By Budget</p>
+									</div><!--/.pricing-header-->
+									<ul class="plan-lists">
+	<li>Rs.30000 - Rs.40000 <a href="https://www.amazon.in/s?k=laptop&rh=n%3A1375424031%2Cp_36%3A7252030031&dc&adgrpid=88845584776&ext_vrnc=hi&gclid=Cj0KCQiAip-PBhDVARIsAPP2xc1nYE_78WiHlHZCQl9pOAr7m-NJ0IGHzbfLk8uBwRa4TXwrtIfh0BoaAvuYEALw_wcB&hvadid=410560204940&hvdev=c&hvlocphy=9062165&hvnetw=g&hvqmt=e&hvrand=12653524443529416847&hvtargid=kwd-307075574612&hydadcr=16600_1945045&qid=1642658786&rnid=7252027031&tag=googinhydr1-21&ref=sr_nr_p_36_3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/></a><a href="https://www.flipkart.com/laptops/~cs-g5q3mw47a4/pr?sid=6bo%2Cb5g&collection-tab-name=Browsing&wid=15.productCard.PMU_V2_4"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a>  <a href="https://www.reliancedigital.in/laptops/c/S101210?searchQuery=:relevance:availability:Exclude%20out%20of%20Stock:price:[29366%20TO%2041063]&page=0"> <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/></a></li>										
+	<li>Rs.50000 - Rs.60000  <a href="https://www.amazon.in/s?k=laptop&i=computers&rh=n%3A1375424031%2Cp_36%3A5000000-6000000&dc&adgrpid=88845584776&ext_vrnc=hi&gclid=Cj0KCQiAip-PBhDVARIsAPP2xc1nYE_78WiHlHZCQl9pOAr7m-NJ0IGHzbfLk8uBwRa4TXwrtIfh0BoaAvuYEALw_wcB&hvadid=410560204940&hvdev=c&hvlocphy=9062165&hvnetw=g&hvqmt=e&hvrand=12653524443529416847&hvtargid=kwd-307075574612&hydadcr=16600_1945045&qid=1642658796&rnid=7252027031&tag=googinhydr1-21&ref=sr_nr_p_36_1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/></a> <a href="https://www.flipkart.com/laptops/~cs-g5q3mw47a4/pr?sid=6bo%2Cb5g&collection-tab-name=Browsing&wid=15.productCard.PMU_V2_4&p%5B%5D=facets.price_range.from%3D40000&p%5B%5D=facets.price_range.to%3DMax"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a><a href="https://www.reliancedigital.in/laptops/c/S101210?searchQuery=:relevance:availability:Exclude%20out%20of%20Stock:price:[50366%20TO%2060063]&page=0"><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/></a></li>
+										<li>Rs.60000 - Rs.70000<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/</li>
+										<li>Rs.70000 & Above<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/</li>
+										
+									</ul><!--/ul-->
+									
+									<div class="project-btn pricing-btn text-center">
+										<a href="project.html"  class="project-view">
+									Browse Now	</a>
+									</div><!--/.project-btn-->
+								</div><!--/.pricing-box-->
+							</div><!--/.col-->
+
+							<div class="col-md-3 col-sm-6">
+								<div class="pricing-box">
+									<div class="pricing-header">
+										<h2> Popular</h2>
+										<h3 class="packeg_p">Smart Tv's</h3>
+										<p>By Budget</p>
+									</div><!--/.pricing-header-->
+									<ul class="plan-lists">
+											<li>Rs.30000 - Rs.40000 <a href="https://www.amazon.in/s?k=smart+tv&rh=n%3A1389396031%2Cp_36%3A14076163031&dc&qid=1642659866&rnid=14076159031&ref=sr_nr_p_36_4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/></a><a href="https://www.flipkart.com/search?q=smart+tv&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&p%5B%5D=facets.price_range.from%3D25000&p%5B%5D=facets.price_range.to%3DMax"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a> <a href="https://www.reliancedigital.in/search?q=smart%20tv:relevance:price:[40000%20TO%2042000]&page=0" ><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/></a></li>
+										
+											<li>Rs.50000 - Rs.60000  <a href="https://www.amazon.in/s?k=smart+tv&i=electronics&rh=n%3A1389396031%2Cp_36%3A5000000-6000000&dc&qid=1642659874&rnid=14076159031&ref=sr_nr_p_36_1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/></a><a href="https://www.flipkart.com/search?q=smart+tv&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&p%5B%5D=facets.price_range.from%3D50000&p%5B%5D=facets.price_range.to%3DMax"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a> <a href="https://www.reliancedigital.in/search?q=smart%20tv:relevance:price:[50000%20TO%2060000]&page=0"> <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/></a></li>
+										<li>Rs.60000 - Rs.70000 <a href="https://www.amazon.in/s?k=smart+tv&i=electronics&rh=n%3A1389396031%2Cp_36%3A6000000-7000000&dc&qid=1642660518&rnid=14076159031&ref=sr_nr_p_36_1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="></a> <a href="https://www.flipkart.com/search?q=smart+tv&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&p%5B%5D=facets.price_range.from%3D50000&p%5B%5D=facets.price_range.to%3DMax"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a><a href="https://www.reliancedigital.in/search?q=smart%20tv:relevance:price:[60000%20TO%2063000]&page=0"><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"</a></li>
+										<li>Rs.70000 & Above   <a href="amazon.in/s?k=smart+tv&i=electronics&rh=n%3A1389396031%2Cp_36%3A7000000-9000000&dc&qid=1642660534&rnid=14076159031&ref=sr_nr_p_36_1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/></a> <a href="https://www.flipkart.com/search?q=smart+tv&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&p%5B%5D=facets.price_range.from%3D60000&p%5B%5D=facets.price_range.to%3DMax"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a><a href="https://www.reliancedigital.in/search?q=smart%20tv:relevance:price:[60000%20TO%201410404]&page=0"><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/></a></li>
+									</ul><!--/ul-->
+									
+									<div class="project-btn pricing-btn text-center">
+										<a href="project.html"  class="project-view">
+											Browse Now
+										</a>
+									</div><!--/.project-btn-->
+								</div><!--/.pricing-box-->
+							</div><!--/.col-->
+
+							<div class="col-md-3 col-sm-6">
+								<div class="pricing-box">
+									<div class="pricing-header">
+										<h2>Popular</h2>
+										<h3 class="packeg_p">Smart Watch</h3>
+										<p>By Budget</p>
+									</div><!--/.pricing-header-->
+									<ul class="plan-lists">
+										<li>Under Rs.1000 <a href="https://www.amazon.in/Smart-Watches-Under-1000/s?k=Smart+Watches+Under+1000"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/></a><a href="https://www.flipkart.com/search?q=smart%20watch%20under%201000&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a>
+										<a href="https://www.reliancedigital.in/sports-fitness-watches/c/10102816?searchQuery=:relevance:price:[1199%20TO%201199]&page=0">	<img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/</li></a>
+										
+										
+										<li>Rs.1000 - Rs.2000 <a href="https://www.amazon.in/Smart-Watches-Under-1000/s?k=Smart+Watches+Under+1000&rh=p_36%3A100000-200000&qid=1642661589&rnid=1318502031&ref=sr_nr_p_36_2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/></a><a href="https://www.flipkart.com/wearable-smart-devices/smart-watches/pr?sid=ajy,buh"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a>
+										<a href="https://www.reliancedigital.in/sports-fitness-watches/c/10102816?searchQuery=:relevance:price:[1199%20TO%202000]&page=0">	<img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/</li></a>
+							
+										
+											<li>Rs.2000 - Rs.3000 <a href="https://www.amazon.in/Smart-Watches-Under-1000/s?k=Smart+Watches+Under+1000&rh=p_36%3A200000-300000&qid=1642661589&rnid=1318502031&ref=sr_nr_p_36_2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/></a><a href="https://www.flipkart.com/wearable-smart-devices/smart-watches/pr?sid=ajy%2Cbuh&p%5B%5D=facets.price_range.from%3D1000&p%5B%5D=facets.price_range.to%3D15000"><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/></a>
+											<a href="https://www.reliancedigital.in/sports-fitness-watches/c/10102816?searchQuery=:relevance:price:[2000%20TO%203000]&page=0"><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/</a></li>
+									
+									
+											<li>Rs.3000 & Above<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftl+0xBEEQht+LABEgAkSACBABIkAEiAARcBEgAkSADMiADNSjprf6puZuPti7+3FdtXVXu7PdT39M9+xAcyaDOePRAiiXkb9GaFnStqTNcH1I+pL0JukxZzz1vBUIkBNJp5L4nxLAjiU91IC1AAHwFCJSYuugBqoF6ELSeUTyHdJE6paiZ6RxvYScNS1ApMIbHYbUcR8hRXsRwFYAznLVAq0FxR5oJRSyGduXdB9Z3pX0nKVpjBB6qSPSYzvK29oJNebv9Q7kjQG3EQD5TxSPph0h7GGUWiFFOek1QkSBGiE1pdIrEMVJd/ZyI+kuFPxUayhl7FISvclkqkDXYWT46Mx026fSFfcyUncYpfRMEs5kpbYxprqwL1h602vCKo6wLiu1QEz3q0grzRHvU/3HL41rLQlXC5QaHSnFL4mdyFGEdE6UWiCU0RBvx2hl6vOc1HJIo4Nzj+bZ6ywjUqSPmjEBggjY1KeBkkou4IqkJUJFilsXzRLIjr4W0V8fYiDS4MPe6ui490gxp00/kEdOlDEQLwDE8GQ+jdD/Ax21x0WB88vIoYl2HKmUEUqgGKD8ckQtLsoMNLo5srAT6UvMPYLQRWxSDfESHqxKIqy2ld8rATFq324Y/gw71PSxC7v+VFLUHswHwPpKfIzFYzs5khYTQHDQjPMMKN86qr468A44PI4/dcZliqaIUbv8OkDsS7e7XxKhlDGU4aF5F29hao4Lg1XSClRlpGbxAigXrbmL0A+uAHAlU8xMcAAAAABJRU5ErkJggg=="/><img src="https://img.icons8.com/ios/25/000000/frequency-f.png"/>
+											<img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/fa314a/external-reliance-industries-limited-is-an-indian-multinational-conglomerate-company-industry-color-tal-revivo.png"/</li>
+									</ul><!--/ul-->
+									
+									<div class="project-btn pricing-btn text-center">
+										<a href="project.html"  class="project-view">
+											Browse Now
+										</a>
+									</div><!--/.project-btn-->
+								</div><!--/.pricing-box-->
+							</div><!--/.col-->
+
+						</div><!--/.row-->
+					</div><!--/.pricing-content-->
+				</div><!--/.pricing-details-->
+			</div><!--/.container-->
+
+		</section><!--/.pricing-->
+		<!--pricing end-->
+
+
+		<!-- testemonial Start -->
+		<section   class="testemonial">
+			<div class="container">
+				<div class="section-header text-center">
+					<h2>
+						<span>
+							what our client say about us
+						</span>
+					</h2>
+				</div><!--/.section-header-->
+				<div class="owl-carousel owl-theme" id="testemonial-carousel">
+					<div class="home1-testm item">
+						<div class="home1-testm-single text-center">
+							<div class="home1-testm-img">
+								<img src="{% static 'main/images/client/testimonial1.jpg'%}" alt="img"/>
+							</div><!--/.home1-testm-img-->
+							<div class="home1-testm-txt">
+								<span class="icon section-icon">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+								</span>
+								<p>
+									Customers want the best products for their needs. In physical stores, it's easy—a salesperson assists them in making a quick buying decision. But it’s not so for online shoppers.
+								</p>
+								<h3>
+									<a href="#">
+										Jeff Bezos
+									</a>
+								</h3>
+								<h4>CEO, Amazon</h4>
+							</div><!--/.home1-testm-txt-->	
+						</div><!--/.home1-testm-single-->
+					</div><!--/.item-->
+					<div class="home1-testm item">
+						<div class="home1-testm-single text-center">
+							<div class="home1-testm-img">
+								<img src="{% static 'main/images/client/testimonial2.jpg'%}" alt="img"/>
+							</div><!--/.home1-testm-img-->
+							<div class="home1-testm-txt">
+								<span class="icon section-icon">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+								</span>
+								<p>
+									Customers want the best products for their needs. In physical stores, it's easy—a salesperson assists them in making a quick buying decision. But it’s not so for online shoppers.								</p>
+								<h3>
+									<a href="#">
+										Kalyan KrishnaMurthy
+									</a>
+								</h3>
+								<h4>CEO, Flipkart</h4>
+							</div><!--/.home1-testm-txt-->	
+						</div><!--/.home1-testm-single-->
+					</div><!--/.item-->
+				
+
+		</section><!--/.testimonial-->	
+		<!-- testemonial End -->
+
+
+		<!--contact start-->
+		<section  class="contact">
+			<div class="container">
+				<div class="contact-details">
+					<div class="section-header contact-head  text-center">
+						<h2>contact us</h2>
+						<p>
+							Founded in July 2012 PriceDekho.in brings you the price comparison for various product categories.. The site also features the available discount codes & deals for the desired product!						</p>
+					</div><!--/.section-header-->
+					<div class="contact-content">
+						<div class="row">
+							<div class="col-sm-offset-1 col-sm-5">
+								<div class="single-contact-box">
+									<div class="contact-right">
+										<div class="contact-adress">
+											<div class="contact-office-address">
+												<h3>contact info</h3>
+												<p>
+													125, Park street avenue, Brocklyn, Newyork.
+												</p>
+												<div class="contact-online-address">
+													<div class="single-online-address">
+														<i class="fa fa-phone"></i>
+														+11253678958
+													</div><!--/.single-online-address-->
+													
+													<div class="single-online-address">
+														<i class="fa fa-envelope-o"></i>
+														<span>info@mail.com</span>
+													</div><!--/.single-online-address-->
+												</div><!--/.contact-online-address-->
+											</div><!--/.contact-office-address-->
+											<div class="contact-office-address">
+												<h3>social partner</h3>
+												<div class="contact-icon">
+													<ul>
+														<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><!--/li-->
+														<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li><!--/li-->
+														<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><!--/li-->
+														<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><!--/li-->
+													</ul><!--/ul-->
+												</div><!--/.contact-icon-->
+											</div><!--/.contact-office-address-->
+											
+										</div><!--/.contact-address-->
+									</div><!--/.contact-right-->
+								</div><!--/.single-contact-box-->
+							</div><!--/.col-->
+							<div class="col-sm-5">
+								<div class="single-contact-box">
+									<div class="contact-form">
+										<h3>Leave us a Massage Here</h3>
+										<form>
+											<div class="row">
+												<div class="col-sm-6 col-xs-12">
+													<div class="form-group">
+													  <input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname">
+													</div><!--/.form-group-->
+												</div><!--/.col-->
+												<div class="col-sm-6 col-xs-12">
+													<div class="form-group">
+													  <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="laststname">
+													</div><!--/.form-group-->
+												</div><!--/.col-->
+											</div><!--/.row-->
+											<div class="row">
+												<div class="col-sm-6 col-xs-12">
+													<div class="form-group">
+														<input type="email" class="form-control" id="email" placeholder="Email" name="email">
+													</div><!--/.form-group-->
+												</div><!--/.col-->
+												<div class="col-sm-6 col-xs-12">
+													<div class="form-group">
+														<input type="text" class="form-control" id="phone" placeholder="Phone" name="phone">
+													</div><!--/.form-group-->
+												</div><!--/.col-->
+											</div><!--/.row-->
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="form-group">
+														<textarea class="form-control" rows="7" id="comment" placeholder="Message" ></textarea>
+													</div><!--/.form-group-->
+												</div><!--/.col-->
+											</div><!--/.row-->
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="single-contact-btn pull-right">
+														<button class="contact-btn" type="button">send message</button>
+													</div><!--/.single-single-contact-btn-->
+												</div><!--/.col-->
+											</div><!--/.row-->
+										</form><!--/form-->
+									</div><!--/.contact-form-->
+								</div><!--/.single-contact-box-->
+							</div><!--/.col-->
+						</div><!--/.row-->
+					</div><!--/.contact-content-->
+				</div><!--/.contact-details-->
+			</div><!--/.container-->
+
+		</section><!--/.contact-->
+
+		
+		<!--hm-footer start-->
+		<section class="hm-footer">
+			<div class="container">
+				<div class="hm-footer-details">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title ">
+									<div class="logo">
+										<a href="index.html">
+											<img src="{% static 'main/images/download (2).png'%}" alt="logo" />
+										</a>
+									</div><!-- /.logo-->
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-para">
+									<p>
+										Founded in July 2012 PriceDekho.in brings you the price comparison for various product categories.. The site also features the available discount codes & deals for the desired product!
+									</p>
+								</div><!--/.hm-foot-para-->
+								<div class="hm-foot-icon">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-icon-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+						<div class=" col-md-2 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>Useful Links</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="footer-menu ">	  
+									<ul class="">
+										<li><a href="index.html" >Home</a></li>
+										<li><a href="about.html">Mobiles</a></li>
+										<li><a href="services.html">SmartTV's</a></li>
+										<li><a href="portfolio.html">Laptops</a></li>
+										<li><a href="mobile.html">Smart Watch</a></li>
+										<li><a href="contact.html">Contact us</a></li> 
+									</ul>
+								</div><!-- /.footer-menu-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+						<div class=" col-md-3 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>from the news</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-para-news">
+									<a href="blog_single.html">
+										We are the best product comparison since 2015.
+									</a>
+									<span>12th June 2017</span>
+								</div><!--/.hm-para-news-->
+								<div class="footer-line">
+									<div class="border-bottom"></div>
+								</div>
+								<div class="hm-para-news">
+									<a href="blog_single.html">
+										Helping Out the customer with the best deal is our prime motive
+									</a>
+									<span>12th June 2019</span>
+								</div><!--/.hm-para-news-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+						<div class=" col-md-3 col-sm-6  col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4> Our Newsletter</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-para">
+									<p class="para-news">
+										Subscribe to our newsletter to get the latest News and offers..
+									</p>
+								</div><!--/.hm-foot-para-->
+								<div class="hm-foot-email">
+									<div class="foot-email-box">
+										<input type="text" class="form-control" placeholder="Email Address">
+									</div><!--/.foot-email-box-->
+									<div class="foot-email-subscribe">
+										<button type="button" >go</button>
+									</div><!--/.foot-email-icon-->
+								</div><!--/.hm-foot-email-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.hm-footer-details-->
+			</div><!--/.container-->
+
+		</section><!--/.hm-footer-details-->
+		<!--hm-footer end-->
+		
+		<!-- footer-copyright start -->
+		<footer class="footer-copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="foot-copyright pull-left">
+							<p>
+								&copy; All Rights Reserved. Designed and Developed by
+							 	<a href="https://www.CodeBook.in">CodeBook.in</a>
+							</p>
+						</div><!--/.foot-copyright-->
+					</div><!--/.col-->
+					<div class="col-sm-5">
+						<div class="foot-menu pull-right
+						">	  
+							<ul>
+								<li ><a href="#">legal</a></li>
+								<li ><a href="#">sitemap</a></li>
+								<li ><a href="#">privacy policy</a></li>
+							</ul>
+						</div><!-- /.foot-menu-->
+					</div><!--/.col-->
+				</div><!--/.row-->
+				<div id="scroll-Top">
+					<i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div><!--/.scroll-Top-->
+			</div><!-- /.container-->
+
+		</footer><!-- /.footer-copyright-->
+		<!-- footer-copyright end -->
+
+
+
+		<!-- jaquery link -->
+
+		<script src="{% static 'main/js/jquery.js'%}"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        
+        <!--modernizr.min.js-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		
+		<!--bootstrap.min.js-->
+        <script type="text/javascript" src="{% static 'main/js/bootstrap.min.js'%}"></script>
+		
+		<!-- bootsnav js -->
+		<script src="{% static 'main/js/bootsnav.js'%}"></script>
+		
+		<!-- for manu -->
+		<script src="{% static 'main/js/jquery.hc-sticky.min.js'%}" type="text/javascript"></script>
+
+		
+		<!-- vedio player js -->
+		<script src="{% static 'main/js/jquery.magnific-popup.min.js'%}"></script>
+
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'%}"></script>
+
+        <!--owl.carousel.js-->
+        <script type="text/javascript" src="{% static 'main/js/owl.carousel.min.js'%}"></script>
+		
+		<!-- counter js -->
+		<script src="{% static 'main/js/jquery.counterup.min.js'%}"></script>
+		<script src="{% static 'main/js/waypoints.min.js'%}"></script>
+		
+        <!--Custom JS-->
+        <script type="text/javascript" src="{% static 'main/js/jak-menusearch.js'%}"></script>
+        <script type="text/javascript" src="{% static 'main/js/custom.js'%}"></script>
+		
+
+    </body>
+	
+</html>
+
+
+
